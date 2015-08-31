@@ -1,6 +1,6 @@
 package state;
 
-public interface State {
-	
+public interface ButtonState {
+
 	public void push(Button b);
 }

@@ -1,6 +1,6 @@
 package state;
 
-public class ON implements State {
+public class ON implements ButtonState {
 
 	private static ON instance = null;
 
@@ -8,7 +8,7 @@ public class ON implements State {
 
 	}
 
-	public static State getInstance() {
+	public static ButtonState getInstance() {
 		if (instance == null) {
 			instance = new ON();
 		}			
@@ -17,8 +17,8 @@ public class ON implements State {
 
 	@Override
 	public void push(Button b) {
-		b.setCurrent( OFF.getInstance() );
-		System.out.println(" Turning ON");
+		System.out.println(" Turning OFF");
+		b.setCurrent(OFF.getInstance());
 
 	}
 }

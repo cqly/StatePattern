@@ -1,17 +1,17 @@
 package state;
 
 public class Button {
-	
-	private State current;
+
+	private ButtonState current;
 
 	public Button() { 
 		current = OFF.getInstance(); 
 	}
-	public void setCurrent(State s) { 
+	public void setCurrent(ButtonState s) { 
 		current = s;
 	}
 
 	public void push()	{ 
-		current.push( this ); 
+		current.push(this); 
 	}
 }
