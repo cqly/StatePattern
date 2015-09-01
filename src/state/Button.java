@@ -2,12 +2,12 @@ package state;
 
 public class Button {
 
-	private ButtonState current;
+	private DifferentState current;
 
 	public Button() { 
 		current = OFF.getInstance(); 
 	}
-	public void setCurrent(ButtonState s) { 
+	public void setCurrent(DifferentState s) { 
 		current = s;
 	}
 

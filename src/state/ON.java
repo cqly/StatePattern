@@ -1,6 +1,6 @@
 package state;
 
-public class ON implements ButtonState {
+public class ON implements DifferentState {
 
 	private static ON instance = null;
 
@@ -8,7 +8,7 @@ public class ON implements ButtonState {
 
 	}
 
-	public static ButtonState getInstance() {
+	public static DifferentState getInstance() {
 		if (instance == null) {
 			instance = new ON();
 		}			
